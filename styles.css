@@ -1,10 +1,13 @@
+:root{
+    --saffron:#FE7F30;
+}
 *{
     border: 0;
     padding: 0;
     margin: 0;
 }
 body{
-    background-color:#333333 ;
+    background-color:var(--saffron) ;
 }
 
 div{
@@ -31,7 +34,10 @@ h1{
     background-size:cover;
 }
 .div2{
-    background-color: orange;
+    display:ruby;
+    background-color: var(--saffron);
+    align-items:center;
+    justify-content: space-around;
 }
 .div3{
     height: 400px;
@@ -40,7 +46,7 @@ h1{
     background-size: cover;
 }
 .div4{
-    background-color: orangered;
+    background-color:var(--saffron);
 }
 a{
     text-decoration: none;
@@ -65,9 +71,11 @@ header{
 }
 .nav_area li a{
     transition: .3s;
-    color: #fff;
+    color: black;
 }
 .nav_area li a:hover{
-    color: rgb(0, 183, 255);
+    color: white;
 }
+
+/*Adding responsiveness*/
 
