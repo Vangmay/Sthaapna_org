@@ -28,19 +28,20 @@ h1{
     padding: 8px 24px;
     border-radius: 16px;
 }
-
+#Div1{
+    position: relative;
+}
 .div1{
     background-image: url(./Images/ign_cityRain.png);
     background-size:cover;
 }
 .div2{
-    display:ruby;
     background-color: var(--saffron);
     align-items:center;
     justify-content: space-around;
 }
 .div3{
-    height: 400px;
+    height: 700px;
     background-image: url(./Images/ign_unsplash15.png);
     background-attachment:fixed;
     background-size: cover;
