@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&display=swap');
+:root{
+    --saffron:#FE7F30;
+    --saffron_light:#fca168;
+}
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
