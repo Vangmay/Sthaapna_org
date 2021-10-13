@@ -6,4 +6,3 @@ hamburger.addEventListener('click',function (){
     mobile_menu.classList.toggle('is-active');
 })
 
-

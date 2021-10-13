@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -14,12 +13,7 @@
             <div class="container">
                 
                 <h1><img src="./Images/Sthaapna_samarkan_font-removebg-preview.png" alt="" srcset=""></h1>
-                <div class="menu">
-                    <a href="#" class="is-active">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Meet</a>
-                    <a href="#">Gallery</a>
-                </div>
+
                 <button class="hamburger">
                     <span></span>
                     <span></span>
@@ -36,6 +30,41 @@
     </nav>
 
 
+    <section class="showcase">
+        <header>
+            <h2 class="logo"></h2>
+            <div class="toggle"></div>
+        </header>
+        
+        <video class = "video" src="./COSTA RICA IN 4K 60fps HDR (ULTRA HD)_Trim.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <div class="animate">
+                    <h2 class="heading"><span class="text-ani" id='text-ani'></span></h2>
+                </div>
+                <h3 class="subheading">Sub heading</h3>
+                <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui, molestias porro sed iure totam.</p>
+            </div>
+    </section>  
+              
+              
+              
+              
+    <script src="./typed.js"></script>
+    <script>
+        var typed = new Typed('.text-ani', {
+            strings:[
+                'Heading1',
+                'Catchy heading',
+                'Heading3',
+            ],
+            typeSpeed:50,
+            backSpeed:50,
+            showCursor:true,
+            autoInsertCss:true
+        });
+    </script>        
+    <script src="./typed.js"></script>
     <section class="hero-container">
         <div id = "parallax" class="div1 hero-div">
             <h1 id="Div1" class="hero-h1">We are sthaapna</h1>
@@ -48,9 +77,9 @@
         </div>
         <div class="div4 hero-div">
             <p>Want to Know more about us? Check out the event gallery!</p>
-            <h1 class="hero-h1" >Div4</h1>
+            <h1 class="hero-h1" ></h1>
         </div>
     </section>
     <script src="./script.js"></script>
-    </body>
-    </html>
+</body>
+</html>
