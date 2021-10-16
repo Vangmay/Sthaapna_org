@@ -125,6 +125,61 @@ h1{
 
 
 
+body{
+    background-color: rgba(254, 127, 48,0.65);
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height:100vh;
+}
+
+.link-container{
+    margin-left: 40px;    
+}
+.link-container ul{
+    list-style-type: none;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+.icons h5{
+    margin-top: 50px;
+}
+.icons img{
+    width:60px;
+    transition:0.2s;
+}
+.icons img:hover{
+    opacity: 0.75;
+    transform: rotate(30deg);    
+}
+.map-container{
+    height: 50%;
+    width: 50%;
+}
+
+.icons{
+    margin-top:10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left:20px;
+    padding-right:20px;
+    border-width: 2px;
+    border-style: dashed;
+}
+.line{
+    width: 100%;
+    background-color: black;
+    height:2px;
+}
+.map-container{
+    text-align:center;
+}
 
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
@@ -138,114 +193,34 @@ h1{
 @media only screen and (max-device-width: 480px) {
     .mobile-nav a{
         margin: 0px auto 20px;
+    }   
+    .hero{
+        margin-top:20px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .map-container{
+        width: 100%;
+        height: 100%;
+        margin-top:12px;
+    }    
+    .icons{
+        width: 220px;    
     }
 }
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
         margin: 0px auto 40px;
     }
+    
+    
+
 }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
+    /* For portrait layouts only */
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
-}
-
-html{
-    background: url(../Images/Meet_the_team_bg.jpeg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center ;
-    background-attachment:fixed;
-}
-.hero{
-    display: flex;
-    justify-content: center;
-    overflow: auto;
-}
-.hero-bg{
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
-    position: relative;
-    height:95vh;
-    width: 75%;
-    background-color: var(--saffron);
-}
-.hero h1{
-    padding-left: 20px;
-}
-.card{
-    width: 100%;
-    height: 30%;
-    background-color: rgba(48, 48, 48, 0.541);
-    margin: 20px 20px;
-}
-
-.founder{
-    margin-top:45px ;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-}
-.founder-container{
-    height: 95vh;
-    width: 75%;
-    background: #e2e2e2;
-}
-
-.founder-card{
-    align-items: center;   
-    position: relative;
-    left: 20px;
-    top: 20px;
-    min-height: 50%;
-    width: 100%;
-    background-color: rgba(254, 127, 48,0.95);
-    text-align: center;
-    color: white;
-}
-
-.founder-card p {
-    text-align: justify;
-    width: 100%;
-    height: 100%;
-    padding: 10px 10px;
-    max-width: 1400px;
-}
-.founder-card img{
-    margin-right:10px;
-    margin-left: 12px;
-    margin-top: 12px;
-    border-radius: 2px;
-    float: left;
-    width: fit-content;
-}
-
-.card img{
-    float: left;
-    position: relative;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 12px;
-    
-    height: 150px;
-    border-radius: 260px;
-}
-#logo{
-    border-radius: 2px;
-    float: right;
-    width: fit-content;
-}
-.about{
-    margin-top: 12px;
-}    
-.card p{
-    margin-top:15px;
-    margin-left: 10px;
-    min-width: 40px;
+    /* For landscape layouts only */
 }
