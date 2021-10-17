@@ -126,33 +126,6 @@ h1{
 
 
 
-@media only screen and (min-width: 960px) {
-    /* styles for browsers larger than 960px; */
-}
-@media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
-}
-@media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
-}
-@media only screen and (max-device-width: 480px) {
-    .mobile-nav a{
-        margin: 0px auto 20px;
-    }
-}
-@media only screen and (device-width: 768px) {
-    .mobile-nav a{
-        margin: 0px auto 40px;
-    }
-}
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
-}
 
 html{
     background: url(../Images/Meet_the_team_bg.jpeg);
@@ -186,17 +159,22 @@ html{
 }
 
 .founder{
+    position: relative;
     margin-top:45px ;
+    margin-bottom:auto;
     display: flex;
     justify-content: center;
     height: 100vh;
     width: 100%;
 }
 .founder-container{
-    height: 95vh;
-    width: 75%;
-    background: #e2e2e2;
+    min-height: 100vh;
+    min-height: 100%;
+    width: 80%;
+    background-color: rgba(254, 127, 48,0.85);
+    
 }
+    
 
 .founder-card{
     align-items: center;   
@@ -205,9 +183,13 @@ html{
     top: 20px;
     min-height: 50%;
     width: 100%;
-    background-color: rgba(254, 127, 48,0.95);
+    background: rgba(226, 226, 226,0.87);
+    box-shadow: -20px -5px 0px rgba(254, 127, 48,0.85);
     text-align: center;
-    color: white;
+    color: black;
+}
+.logo{
+    background-color: #e2e2e2;
 }
 
 .founder-card p {
@@ -248,4 +230,90 @@ html{
     margin-top:15px;
     margin-left: 10px;
     min-width: 40px;
+}
+.sliders{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(254, 127, 48,0.90);
+    min-height: 100vh; 
+    height: fit-content;
+    justify-content: center;
+    margin-top: 40px;
+}
+.advisory-board{
+    position:relative;
+    
+    margin-left:40px;
+    margin-right:40px;
+    transform: scale(0.89);
+    
+}
+@media only screen and (min-width: 960px) {
+    
+    /* styles for browsers larger than 960px; */
+}
+@media only screen and (min-width: 1440px) {
+    
+    /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width: 480px) {
+    .mobile-nav a{
+        margin: 0px auto 20px;
+    }
+    .founder-container{
+        height: fit-content;
+        width: 75%;
+        background-color: rgba(254, 127, 48,0.85);
+        align-items: center;
+    }
+    .founder-card img{
+        
+        
+        border-radius: 2px;
+        float: left;
+        width: 70%;
+    }
+    .founder-card{
+        align-items: center;
+    }
+    #logo{
+        border-radius: 2px;
+        float: right;
+        width: 50%;
+    }
+}
+@media only screen and (device-width: 768px) {
+    .mobile-nav a{
+        margin: 0px auto 40px;
+    }
+    .founder-container{
+        height: fit-content;
+        width: 75%;
+        background-color: rgba(254, 127, 48,0.85);
+    }
+    .founder-card img{
+        margin-right:10px;
+        margin-left: 12px;
+        margin-top: 12px;
+        border-radius: 2px;
+        float: left;
+        width: 50%;
+    }
+    #logo{
+        border-radius: 2px;
+        float: right;
+        width: 50%;
+    }
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
 }
