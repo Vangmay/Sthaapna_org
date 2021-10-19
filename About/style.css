@@ -133,7 +133,7 @@ h1{
 }
 .about{
     position: relative;
-    min-height: 50vh;
+    min-height: 60vh;
     height: fit-content;
     width: 100%;
     background-color: #ECECEC;
@@ -160,6 +160,7 @@ h1{
     color:black;
     height: 50%;
     width: 100%;
+    
 }
 .about-text h1{
     max-width: 800px;
@@ -199,6 +200,7 @@ h1{
 }
 .pillers{
     height: 100vh;
+    min-height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -242,15 +244,148 @@ h1{
     .mobile-nav a{
         margin: 0px auto 20px;
     }
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-photo img{
+        transform: scale(2.5);
+    }    
+    .about-text{
+        width: 90%;
+        margin-bottom: 12px;
+    }
+    .view{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;     
+        height: fit-content;
+        min-height: 100%;   
+    }
+    .view div{
+        text-align: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .pillers{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .pillers div ul li p{
+        max-width: 100%;
+        
+    }
+    .pillers div ul{
+        display: inline-block;
+    }
+    .pillers div h1{
+        max-width: 100%;
+       
+    }
+    .pillers div{
+        padding: 12px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+        
+        
 }
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
         margin: 0px auto 40px;
     }
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-photo img{
+        transform: scale(2.5);
+    }    
+    .about-text{
+        width: 90%;
+        margin-bottom: 12px;
+    }
+    .view{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;     
+        height: fit-content;
+        min-height: 100%;   
+    }
+    .view div{
+        text-align: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .pillers{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .pillers div ul li p{
+        max-width: 100%;
+        
+    }
+    .pillers div ul{
+        display: inline-block;
+    }
+    .pillers div h1{
+        max-width: 100%;
+       
+    }
+    .pillers div{
+        padding: 12px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-photo img{
+        transform: scale(2.5);
+    }    
+    .about-text{
+        width: 90%;
+        margin-bottom: 12px;
+    }
+    .view{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;     
+        height: fit-content;
+        min-height: 100%;   
+    }
+    .view div{
+        text-align: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .pillers{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .pillers div ul li p{
+        max-width: 100%;
+        
+    }
+    .pillers div ul{
+        display: inline-block;
+    }
+    .pillers div h1{
+        max-width: 100%;
+       
+    }
+    .pillers div{
+        padding: 12px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
