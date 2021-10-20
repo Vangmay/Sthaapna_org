@@ -240,13 +240,14 @@ html{
     height: fit-content;
     justify-content: center;
     margin-top: 40px;
+    align-items: center;
 }
 .advisory-board{
+    margin-top: 40px;
+    width: 90%;
     position:relative;
     
-    margin-left:40px;
-    margin-right:40px;
-    transform: scale(0.89);
+    
     
 }
 @media only screen and (min-width: 960px) {

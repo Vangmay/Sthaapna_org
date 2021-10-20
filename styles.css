@@ -284,7 +284,21 @@ h1{
     border: none;
     border-radius: 25px;
 }
-
+.text-ani{
+    background: var(--primary);
+    color: black;
+    
+}
+.subheading{
+    width: fit-content;
+    background: #ececec;
+    color: var(--primary);
+}
+.textp{
+    background: #3e3e3e;
+    color: #ececec;
+    padding: 4px;
+}
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
     .text{
