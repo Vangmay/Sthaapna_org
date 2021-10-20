@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300;400&family=Poppins:ital,wght@0,300;1,200&display=swap');
 :root{
     --saffron:#FE7F30;
     --saffron_light:#fca168;
@@ -8,6 +10,7 @@
     border: 0;
     padding: 0;
     margin: 0;
+    font-family: 'Martel', serif;
 }
 
 ::-webkit-scrollbar {

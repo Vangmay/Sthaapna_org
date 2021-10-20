@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
+    
 }
 img{
     width: 150px;
@@ -189,7 +189,6 @@ body{
 .map-text{
     background-color:rgba(254, 127, 48,0.5) ;
 }
-
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
 }
