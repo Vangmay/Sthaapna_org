@@ -283,6 +283,7 @@ h1{
 .videos{
     border: none;
     border-radius: 25px;
+    
 }
 .text-ani{
     background: var(--primary);

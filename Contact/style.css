@@ -146,9 +146,10 @@ body{
 .icons{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .icons h5{
-    margin-top: 50px;
+    margin-left: 20px;
 }
 .icons img{
     width:60px;
@@ -173,13 +174,20 @@ body{
     border-style: dashed;
     border-radius: 12px;
 }
+.icons a img{
+    border-radius: 0px;
+}
 .line{
     width: 100%;
-    background-color: black;
+    background-color: #3e3e3e;
     height:2px;
 }
 .map-container{
     text-align:center;
+    align-items: center;
+}
+.map-text{
+    background-color:rgba(254, 127, 48,0.5) ;
 }
 
 @media only screen and (min-width: 960px) {
