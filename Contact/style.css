@@ -114,7 +114,7 @@ h1{
     background-color: #f28500;
     color: white;
     text-decoration: none;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-out
 }
 
 .mobile-nav a:hover{
@@ -145,11 +145,11 @@ body{
 }
 .icons{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 .icons h5{
-    margin-left: 20px;
+    
 }
 .icons img{
     width:60px;
@@ -159,8 +159,12 @@ body{
     opacity: 0.75;
     transform: rotate(30deg);    
 }
+.address{
+    display: flex;
+    flex-direction: column;
+}
 .map-container{
-    height: 50%;
+    height: 80%;
     width: 50%;
 }
 
@@ -185,9 +189,6 @@ body{
 .map-container{
     text-align:center;
     align-items: center;
-}
-.map-text{
-    background-color:rgba(254, 127, 48,0.5) ;
 }
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
