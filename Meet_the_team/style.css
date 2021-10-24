@@ -169,12 +169,11 @@ html{
 }
 .founder-container{
     min-height: 100vh;
-    
+    min-height: 100%;
     width: 80%;
     background-color: rgba(254, 127, 48,0.85);
+    
 }
-
-  
     
 
 .founder-card{
@@ -189,11 +188,8 @@ html{
     text-align: center;
     color: black;
 }
-.about{
-    background: rgba(226, 226, 226);
-}
 .logo{
-    background-color: #e2e2e2;
+    
 }
 
 .founder-card p {
@@ -243,17 +239,15 @@ html{
     min-height: 100vh; 
     height: fit-content;
     justify-content: center;
-    margin-top: 40px;
     align-items: center;
+    padding: 40px;
 }
 .advisory-board{
     margin-top: 40px;
     width: 90%;
     position:relative;
-    
-    
-    
 }
+
 @media only screen and (min-width: 960px) {
     
     /* styles for browsers larger than 960px; */
@@ -284,7 +278,6 @@ html{
     }
     .founder-card{
         align-items: center;
-        font-size: 12px;
     }
     #logo{
         border-radius: 2px;
@@ -295,10 +288,6 @@ html{
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
         margin: 0px auto 40px;
-    }
-    .founder-card{
-        align-items: center;
-        font-size: 14px;
     }
     .founder-container{
         height: fit-content;
@@ -318,15 +307,6 @@ html{
         float: right;
         width: 50%;
     }
-    
-}
-@media only screen and (max-device-width:790px){
-    #logo{
-        width: 50%;
-    }
-    .founder-card img{
-        width: 50%;
-    }
 }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -334,9 +314,5 @@ html{
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    /* For landscape layouts only */
-}
-
-@media only screen and (max-device-width: 546px) {
-
+  /* For landscape layouts only */
 }
