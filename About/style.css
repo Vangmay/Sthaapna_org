@@ -252,7 +252,7 @@ h1{
         align-items: center;
     }
     .about-photo img{
-        transform: scale(2.5);
+        transform: scale(2);
     }    
     .about-text{
         width: 90%;
