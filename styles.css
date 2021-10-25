@@ -346,7 +346,7 @@ h1{
         position: relative;
         z-index: 10;
         right:40px;
-        font-size: 10px;
+        font-size: 9px;
     }
     .testimonials{
         flex-direction: row;
@@ -368,8 +368,6 @@ h1{
         margin: 0px auto 40px;
     }
     .text{
-        right:40px;
-        position: relative;
         z-index: 10;
         padding:10px 10px;
         font-size: 10px;
