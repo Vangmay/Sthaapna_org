@@ -371,7 +371,7 @@ h1{
         z-index: 10;
         padding:10px 10px;
         font-size: 10px;
-    }   
+    }    
     .testimonials{
         flex-direction: row;
     }
@@ -429,4 +429,11 @@ h1{
     .text{
         max-width: 450px;
     };    
+}
+
+@media (max-width:360px) {
+   .text{
+       position: relative;
+       right: 90px;
+   }
 }
