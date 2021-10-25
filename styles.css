@@ -211,7 +211,7 @@ h1{
     background-color: #ff151541;
     mix-blend-mode: overlay;
 }
-.text h2{
+.heading{
     font-size: 4em;
     font-weight:800;
     line-height: 1em;
@@ -425,6 +425,7 @@ h1{
         
         font-size: 12px;
     };    
+    
 }
 @media (max-width:590px){
     .text{
