@@ -212,13 +212,13 @@ h1{
     mix-blend-mode: overlay;
 }
 .heading{
-    font-size: 4em;
+    font-size: 3em;
     font-weight:800;
     line-height: 1em;
     text-transform: uppercase;
 }
 .text h3{
-    font-size:2.5em;
+    font-size:2em;
     font-weight: 700;
     line-height:1em;
     text-transform: uppercase;
