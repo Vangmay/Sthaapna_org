@@ -36,3 +36,6 @@
     color: var(--saffron);
     background: #555;
 }
+nav{
+    backdrop-filter: blur(12px);
+}
