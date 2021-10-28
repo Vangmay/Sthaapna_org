@@ -14,7 +14,7 @@
 }
 img{
     width: 150px;
-    border-radius: 40px;
+    
 }
 .container{
     max-width: 1280px;
@@ -25,7 +25,7 @@ img{
     justify-content: space-between;
 }
 nav{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -123,137 +123,53 @@ h1{
     background-color: var(--saffron);
 }
 
-
-
-
-
-html{
-    background: url(../Images/Meet_the_team_bg.jpeg);
+.hero-image{
+    width: 100%;
+    height: 100vh;
+    background:url('../Images/hero-bg.PNG') ;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center ;
-    background-attachment:fixed;
-}
-.hero{
+    background-position:center;
+    background-position-y: top;
+    text-align: center;
     display: flex;
     justify-content: center;
-    overflow: auto;
+    align-items: center;
+    background-attachment:fixed ;
 }
-.hero-bg{
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
-    position: relative;
-    height:95vh;
-    width: 75%;
-    background-color: var(--saffron);
-}
-.hero h1{
-    padding-left: 20px;
-}
-.card{
-    width: 100%;
-    height: 30%;
-    background-color: rgba(48, 48, 48, 0.541);
-    margin: 20px 20px;
+.hero-image h1{
+    color: var(--light);
+    background: var(--dark);
+    width: fit-content;
+    font-size: 90px;
 }
 
 .founder{
-    position: relative;
-    margin-top:45px ;
-    margin-bottom:auto;
-    display: flex;
-    justify-content: center;
     height: 100vh;
     width: 100%;
-}
-.founder-container{
-    min-height: 100vh;
-    min-height: 100%;
-    width: 80%;
-    background-color: rgba(254, 127, 48,0.85);
-    
-}
-    
-
-.founder-card{
-    align-items: center;   
-    position: relative;
-    left: 20px;
-    top: 20px;
-    min-height: 50%;
-    width: 100%;
-    background: rgba(226, 226, 226,0.87);
-    box-shadow: -20px -5px 0px rgba(254, 127, 48,0.85);
-    text-align: center;
-    color: black;
-}
-.logo{
-    
-}
-
-.founder-card p {
-    text-align: justify;
-    width: 100%;
-    height: 100%;
-    padding: 10px 10px;
-    max-width: 1400px;
-}
-.founder-card img{
-    margin-right:10px;
-    margin-left: 12px;
-    margin-top: 12px;
-    border-radius: 2px;
-    float: left;
-    width: fit-content;
-}
-
-.card img{
-    float: left;
-    position: relative;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 12px;
-    
-    height: 150px;
-    border-radius: 260px;
-}
-#logo{
-    border-radius: 2px;
-    float: right;
-    width: fit-content;
-}
-.about{
-    margin-top: 12px;
-}    
-.card p{
-    margin-top:15px;
-    margin-left: 10px;
-    min-width: 40px;
-}
-.sliders{
-    position:relative;
     display: flex;
     flex-direction: column;
-    background-color: rgba(254, 127, 48,0.90);
-    min-height: 100vh; 
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
 }
-.advisory-board{
-    margin-top: 40px;
-    width: 90%;
-    position:relative;
+
+.founder-container{
+    height: 100%;
+    width: 100%;
+    background: red;
+    
+}
+.founder-container img{
+    margin: 15px;
+    width: 12%;
+    float: left;
+}
+.founder-text{
+    margin-top: 12px;
 }
 
 @media only screen and (min-width: 960px) {
-    
     /* styles for browsers larger than 960px; */
 }
 @media only screen and (min-width: 1440px) {
-    
     /* styles for browsers larger than 1440px; */
 }
 @media only screen and (min-width: 2000px) {
@@ -263,54 +179,15 @@ html{
     .mobile-nav a{
         margin: 0px auto 20px;
     }
-    .founder-container{
-        height: fit-content;
-        width: 75%;
-        background-color: rgba(254, 127, 48,0.85);
-        align-items: center;
-    }
-    .founder-card img{
-        
-        
-        border-radius: 2px;
-        float: left;
-        width: 70%;
-    }
-    .founder-card{
-        align-items: center;
-    }
-    #logo{
-        border-radius: 2px;
-        float: right;
-        width: 50%;
-    }
 }
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
         margin: 0px auto 40px;
     }
-    .founder-container{
-        height: fit-content;
-        width: 75%;
-        background-color: rgba(254, 127, 48,0.85);
-    }
-    .founder-card img{
-        margin-right:10px;
-        margin-left: 12px;
-        margin-top: 12px;
-        border-radius: 2px;
-        float: left;
-        width: 50%;
-    }
-    #logo{
-        border-radius: 2px;
-        float: right;
-        width: 50%;
-    }
 }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    /* For portrait layouts only */
+  /* For portrait layouts only */
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {

@@ -214,8 +214,8 @@ h1{
 .pillers div{
     background-color: #ECECEC;
     justify-content: space-between;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     min-height: fit-content;
     margin: 12px;
     border-radius: 40px;
