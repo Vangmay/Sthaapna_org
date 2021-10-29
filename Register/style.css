@@ -14,7 +14,7 @@
 }
 img{
     width: 150px;
-    
+    border-radius: 40px;
 }
 .container{
     max-width: 1280px;
@@ -35,7 +35,7 @@ nav{
     
 }
 h1{
-   
+    color: white;
     font-size: 28px;
     font-weight: 500;
     text-transform: uppercase;
@@ -123,71 +123,156 @@ h1{
     background-color: var(--saffron);
 }
 
-.hero-image{
-    width: 100%;
+.content{
     height: 100vh;
-    background:url('../Images/hero-bg.PNG') ;
-    background-size: cover;
+    background-color: var(--dark);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 640px; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.form Label{
+    color:var(--primary);
+}
+
+#form{
+    font-family: 'Fira Code', monospace;
+}
+h2{
+    color: var(--primary);
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+}
+.form h1{
+    color: #a3d49d;
+}
+
+input, textarea{
+    color: var(--primary);
+}
+
+.submit{
+    color:black;
+    background-color: var(--primary);
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    box-shadow: none;
+}
+
+.box{
+    height:50px;
+    width: 500px;
+    background: transparent;
+    border: #fabfb8;
+    border-style: dotted;
+    border-radius: 40px;
+    padding: 20px;
+    outline: none;
+    font-size: 15px;
+}
+
+#Interests{
+    height:150px;
+    resize: none;
+    overflow: hidden;
+}
+
+.radio {
+    --size: 25px;
+    min-width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    margin: 0 10px;
+    position: relative;
+    padding-left: var(--size);
+  }
+  
+  .radio input {
+    display: none;
+  }
+  
+  
+  .radio.left {
+    padding-left: 0;
+    padding-right: var(--size);
+  }
+  
+  
+  .radio .label {
+    margin-left: 5px;
+  }
+  
+  .radio.left .label {
+    margin: 0 5px;
+  }
+  
+  .radio[aria-label]::after {
+    content: attr(aria-label);
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  
+  .radio .checkmark {
+    --gap: 3px;
+    --border: 2px;
+    --check-color: #ff5722;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    
+    border: var(--border) solid #444;
+    padding: var(--gap);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .radio.left .checkmark {
+    left: auto;
+    right: 0;
+  }
+  
+  .end-message{
+      color: var(--primary);
+      font-size: 20px;
+  }
+  .radio input:checked ~ .checkmark {
+  
+    background-origin: content-box;
     background-repeat: no-repeat;
-    background-position:center;
-    background-position-y: top;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment:fixed ;
-}
-.hero-image h1{
-    color: var(--light);
-    background: var(--dark);
-    width: fit-content;
-    font-size: 90px;
-}
+    background-image: radial-gradient(
+      circle at center, 
+      var(--check-color) 
+      calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), 
+      rgba(255, 255, 255, 0) 0);
+  }
 
-.founder{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
-.founder-container{
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.about{
-    display: flex;
-    flex-direction: column-reverse;
-}
-.founder-img{
-    margin: 15px;
-    width: 20%;
-    float: left;
-}
-.founder-text{
-    width: 100%;
-    max-width: 200px;
-    min-width: 1400px;
-    margin-top: 12px;
-}
-#logo{
-    margin: 15px;
-    width: 20%;
-    float: right;
-}
-
-@media only screen and (min-width: 960px) {
-    /* styles for browsers larger than 960px; */
-}
-@media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
-}
-@media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
-}
 @media only screen and (max-device-width: 480px) {
     .mobile-nav a{
         margin: 0px auto 20px;
@@ -198,11 +283,4 @@ h1{
         margin: 0px auto 40px;
     }
 }
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
-}

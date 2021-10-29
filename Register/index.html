@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                
+                <h1><img src="../Images/Sthaapna_samarkan_font-removebg-preview.png" alt="" srcset=""></h1>
+
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <a href="#" class="is-active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Meet</a>
+        <a href="#">Gallery</a>
+    </nav>
+    <div class="content">
+        <div class="form">
+            <h2><span class="text-ani"></span></h2>
+            <br>
+            <br>
+            <form id="form" name = 'data' method="POST">
+                
+                <br>
+                <input type="text" name="Name" id="name" placeholder="Name" class = 'box'>
+                <br>
+                <br>
+                <input type="numeric" name="Age" id="Age" placeholder="Age?" class = 'box'>
+                <br>
+                <br>
+                <label >Are you a student or worker</label>
+                <br>
+
+                <input type="radio" name = "Skill" class = "radio"  value = "Student" id = "radio">
+                <Label>Student</Label>
+                <br>
+                <br>
+
+                <input type="radio" name = "Skill" class = "radio"  value = "Worker" id = "radio">
+                <Label>Worker</Label>
+                <br>
+                <br>
+                <br>
+                <input type="email" class = 'box' name="Email" id="email" placeholder="Email">
+                <br>
+                <br>
+                <br>
+                <h1>What are your interests?</h1>
+                <br>
+                <textarea name="Interests" id="Interests" class = "box" placeholder="Any skill that you want to use or even learn while working with us. We will try our best to create a perfect opportunity for you!"></textarea>
+                <br>
+            
+                
+                <br>
+                <button class="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx6zQVWEzfADsoiT8HTsthvVniRLdGivIb1nFsXHQBVcUyY2fy21G8SpVQeRBxsRMc_LA/exec'
+        const form = document.forms['data']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>    
