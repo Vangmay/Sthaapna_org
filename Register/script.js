@@ -8,7 +8,5 @@ hamburger.addEventListener('click',function (){
     mobile_menu.classList.toggle('is-active');
 })
 
-submit.addEventListener('click',function(){
-    content.innerHTML = "<h1 class='end-message'>Thanks for you submission, you will hear from us soon.</h1>"
-})
+
 
