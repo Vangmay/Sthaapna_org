@@ -74,11 +74,14 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx6zQVWEzfADsoiT8HTsthvVniRLdGivIb1nFsXHQBVcUyY2fy21G8SpVQeRBxsRMc_LA/exec'
         const form = document.forms['data']
-      
+        const button = document.querySelector('.submit')
+
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .catch(error => console.error('Error!', error.message))
+          .catch(error => console.error('Error!', error.message))
+          button.innerHTML = "Thank you"
+          button.disabled = true
         })
     </script>
     <script src="./script.js"></script>
