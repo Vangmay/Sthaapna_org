@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+   
 }
 img{
     width: 150px;
@@ -28,7 +28,6 @@ nav{
     position: relative;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.3);
     padding:16px 32px;
@@ -114,7 +113,7 @@ h1{
     background-color: #f28500;
     color: white;
     text-decoration: none;
-    transition: 0.3s ease-out
+    transition: 0.3s ease-out;
 }
 
 .mobile-nav a:hover{
@@ -124,72 +123,44 @@ h1{
 }
 
 
+/* ________________________________________________________________________ */
 
 body{
-    background-color: rgba(254, 127, 48,0.65);
+    background: var(--primary);
 }
-
-.hero{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+.main{
+    min-height: 100vh;
+    height: fit-content;
     width: 100%;
-    height:100vh;
-}
-
-.link-container{
-    margin-left: 40px;    
-}
-.link-container ul{
-    list-style-type: none;
-}
-.icons{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-.icons h5{
-    font-family: 'Samarkan', sans-serif;
-}
-.icons img{
-    width:60px;
-    transition:0.2s;
-}
-.icons img:hover{
-    opacity: 0.75;
-    transform: rotate(30deg);    
-}
-.address{
-    display: flex;
-    flex-direction: column;
-}
-.map-container{
-    height: 80%;
-    width: 50%;
+    background: var(--primary);
 }
 
-.icons{
-    margin-top:10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left:20px;
-    padding-right:20px;
-    border-width: 2px;
-    border-style: dashed;
-    border-radius: 12px;
+.item{
+    width: 80%;
+    height:fit-content;
+    background: red;
+    justify-content: center;
+    text-align: center;
+    margin: 12px;
 }
-.icons a img{
-    border-radius: 0px;
+.item a{
+    text-decoration:none;
+    color: black;
+    text-transform: var(--primary);
 }
-.line{
-    width: 100%;
-    background-color: #3e3e3e;
-    height:2px;
+.font{
+    transition: 0.2s ease-out;
 }
-.map-container{
-    text-align:center;
-    align-items: center;
+.font:hover{
+    transform: scale(1.2);
 }
+
+
+
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
 }
@@ -202,34 +173,18 @@ body{
 @media only screen and (max-device-width: 480px) {
     .mobile-nav a{
         margin: 0px auto 20px;
-    }   
-    .hero{
-        margin-top:20px;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .map-container{
-        width: 100%;
-        height: 100%;
-        margin-top:12px;
-    }    
-    .icons{
-        width: 220px;    
     }
 }
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
         margin: 0px auto 40px;
     }
-    
-    
-
 }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    /* For portrait layouts only */
+  /* For portrait layouts only */
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    /* For landscape layouts only */
+  /* For landscape layouts only */
 }

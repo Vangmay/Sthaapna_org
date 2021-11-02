@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@300;400&family=Poppins:ital,wght@0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Martel:wght@300;400;600&display=swap');
 @import url('http://fonts.cdnfonts.com/css/samarkan');
 :root{
     --saffron:#FE7F30;
@@ -13,14 +14,16 @@
     border: 0;
     padding: 0;
     margin: 0;
-    font-family: 'Samarkan', sans-serif;
+    /* font-family: 'Samarkan', sans-serif; */
+    font-family: 'Martel', serif;
+    font-weight:400 ;
 }
 
 ::-webkit-scrollbar {
     width: 6px;
 }
-  
-  /* Track */
+
+/* Track */
 ::-webkit-scrollbar-track {
     background: #3e3e3e;
 }
@@ -41,4 +44,7 @@
 }
 nav{
     backdrop-filter: blur(12px);
+}
+.font{
+    font-family: 'Samarkan', sans-serif;
 }
