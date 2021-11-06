@@ -103,7 +103,10 @@ h1{
     left: 0;
 }
 
-
+input[type=number] {
+    
+    -moz-appearance: textfield;
+}
 
 .content{
     height: 100vh;

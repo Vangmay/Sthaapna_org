@@ -32,46 +32,7 @@
         <h6>Designed by: <span><a target="blank" href="https://thebinary-pages.com/" class="website">Vangmay Sachan</a></span></h6>
     </nav>
     <div class="content">
-        <div class="form">
-            <h2><span class="text-ani"></span></h2>
-            <br>
-            <br>
-            <form id="form" name = 'data' method="POST">
-                
-                <br>
-                <input type="text" name="Name" id="name" placeholder="Name" class = 'box'>
-                <br>
-                <br>
-                <input pattern="[0-99]+" name="Age" id="Age" placeholder="Age?" class = 'box'>
-                <br>
-                <br>
-                <label >Are you a student or worker</label>
-                <br>
-
-                <input type="radio" name = "Skill" class = "radio"  value = "Student" id = "radio">
-                <Label class="font">Student</Label>
-                <br>
-                <br>
-
-                <input type="radio" name = "Skill" class = "radio"  value = "Worker" id = "radio">
-                <Label class="font">Worker</Label>
-                <br>
-                <br>
-                <br>
-                <input type="email" class = 'box' name="Email" id="email" placeholder="Email">
-                <br>
-                <br>
-                <br>
-                <h1 class="font">What are your interests?</h1>
-                <br>
-                <textarea name="Interests" id="Interests" class = "box" placeholder="Any skill that you want to use or even learn while working with us. We will try our best to create a perfect opportunity for you!"></textarea>
-                <br>
-            
-                
-                <br>
-                <button class="submit" type="submit">Submit</button>
-            </form>
-        </div>
+        <h1>Thank you for joining, You will be hearing from us soon!</h1>
     </div>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx6zQVWEzfADsoiT8HTsthvVniRLdGivIb1nFsXHQBVcUyY2fy21G8SpVQeRBxsRMc_LA/exec'
@@ -84,7 +45,6 @@
           .catch(error => console.error('Error!', error.message))
           button.innerHTML = "Thank you"
           button.disabled = true
-          window.location.replace("./submitted.html");
         })
     </script>
     <script src="./script.js"></script>
