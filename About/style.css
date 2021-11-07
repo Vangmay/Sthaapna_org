@@ -189,26 +189,32 @@ h1{
     width: 100%;
     text-align: center;
     background-color: rgba(254, 127, 48,0.86);
+    padding: 20px;
 }
 .pillers{
-    min-height: 100vh;
-    height: fit-content;
+    height: 100vh;
+    min-height: fit-content;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: rgba(254, 127, 48,0.86);
 }
 .pillers div{
     background-color: #ECECEC;
-    justify-content: space-between;
-    height: 100%;
-    width: 90%;
+    width: 50%;
+    min-height: 50%;
+    height: fit-content;
     padding: 12px;
     margin: 12px;
     border-radius: 30px;
     align-items: center;
     text-align: center;
+}
+.first,.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .pillers div p{
     max-width: 100%;

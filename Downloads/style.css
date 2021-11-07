@@ -102,7 +102,7 @@ h1{
     left: 0;
 }
 
-.mobile-nav a{
+.mobile-nav-a{
     display: block;
     border-radius: 40px;
     width: 100%;
@@ -116,7 +116,7 @@ h1{
     transition: 0.3s ease-out;
 }
 
-.mobile-nav a:hover{
+.mobile-nav-a:hover{
     letter-spacing: 8px;
     width: 50%;
     background-color: var(--saffron);
@@ -142,14 +142,18 @@ body{
 .item{
     width: 80%;
     height:fit-content;
-    background: red;
     justify-content: center;
+    color: white;
     text-align: center;
     margin: 12px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
 }
 .item a{
     text-decoration:none;
-    color: black;
+    color: rgb(255, 255, 255);
     text-transform: var(--primary);
 }
 .font{

@@ -295,7 +295,17 @@ h1{
     
     padding: 4px;
 }
-
+.link{
+    text-decoration: none;
+    color: var(--dark);
+    transition: 0.15s ease-in;
+    text-transform: lowercase;
+    font-family: 'Samarkan', sans-serif;
+}
+.link:hover{
+    color: var(--light);
+    background-color: var(--dark);
+}
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
     .text{

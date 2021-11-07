@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../global.css">
 </head>
@@ -25,14 +31,127 @@
     </header>
     <nav class="mobile-nav">
         <a href="../" class="mobile-nav-a">Home</a>
-        <a href="../Contact" class="is-active mobile-nav-a">About</a>
+        <a href="../About/" class="is-active mobile-nav-a">About</a>
         <a href="../Meet_the_team" class="mobile-nav-a">Meet us</a>
         <a href="../Gallery" class="mobile-nav-a">Gallery</a>
         <a href="../Register" class="is-active mobile-nav-a">Join us</a>
         <h6>Designed by: <span><a target="blank" href="https://thebinary-pages.com/" class="website">Vangmay Sachan</a></span></h6>
     </nav>
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-2956ba69-7fdd-4d19-913d-1ef79df3df74"></div>
+    
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../Images/Folk Festival Live Music.webp" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="../Images/Folk Festival Live Music.webp" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="../Images/Folk Festival Live Music.webp" alt="" srcset=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+            <!-- If we need scrollbar -->
+        </div>
+        <br>
+        <style>
+            :root{
+                --saffron:#FE7F30;
+                --saffron_light:#fca168;
+                --saffron_lightest:#fba168;
+                --primary:var(--saffron);
+                --light:#EEEEEE;
+                --dark:#212121;
+            }
+            .swiper {
+                width: 100%;
+                height: 70vh;
+            }
+            
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                
+                background-color: var(--saffron_light);
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit:contain;
+            }
+            .swiper-button-prev,.swiper-button-next{
+                color:var(--saffron);
+            }
+            .swiper-pagination-bullet{
+                background-color: var(--light);
+            }
+            .swiper-pagination-bullet-active-next,.swiper-pagination-bullet-active-next-next{
+                background-color: var(--primary);
+                opacity: 0.9;
+            }    
+            @media only screen and (max-device-width: 480px) {
+                .swiper{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @media only screen and (device-width: 768px) {
+                .swiper{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+        
+        
+        </style>
+
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets:true,
+                    
+                },
+                
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                    });
+        </script>
+    </div>
+    
     <br>
     <br>
     <br>
