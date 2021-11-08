@@ -168,7 +168,6 @@ h1{
     padding:25px;
     font-size: 18px;
     max-width: 700px;
-    background-color: rgba(94, 94, 94, 0.5);
     color: rgba(230, 230, 230, 0.7);
     border-radius: 12px;
     min-width: fit-content;
@@ -305,6 +304,21 @@ h1{
 .link:hover{
     color: var(--light);
     background-color: var(--dark);
+}
+.testimonial
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.testimonial p{
+    margin: 12px;
+    font: xx-small;
+    color: #d6d6d6;
+    background-color:rgb(0, 0, 0,0.4);
+}
+.bold{
+    text-transform: uppercase;
 }
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
