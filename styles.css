@@ -308,10 +308,11 @@ h1{
 .testimonial
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 .testimonial p{
+    text-align: left;
     margin: 12px;
     font: xx-small;
     color: #d6d6d6;
