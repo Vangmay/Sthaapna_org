@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../global.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navv">
+            <div class="container">
+                
+                <h1><img src="../Images/Sthaapna_samarkan_font-removebg-preview.png" alt="" srcset=""></h1>
+
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <a href="../" class="mobile-nav-a">Home</a>
+        <a href="../About/" class="mobile-nav-a">About</a>
+        <a href="../Gallery" class="mobile-nav-a">Gallery</a>
+        <a href="../Contact" class="is-active mobile-nav-a">Contact</a>
+        <a href="../Register" class="is-active mobile-nav-a">Join us</a>
+        <h6>Designed by: <span><a target="blank" href="https://thebinary-pages.com/" class="website">Vangmay Sachan</a></span></h6>
+    </nav>
+    <section class="hero">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide one">
+                    <div class="text">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sapiente libero soluta eum tempora ducimus maiores impedit quia totam perferendis.</p>
+                    </div>
+                     
+                </div>
+                
+                <div class="swiper-slide two">
+                    <div class="text">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sapiente libero soluta eum tempora ducimus maiores impedit quia totam perferendis.</p>
+                    </div>
+                     
+                </div>
+                
+                <div class="swiper-slide three">
+                    <div class="text">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sapiente libero soluta eum tempora ducimus maiores impedit quia totam perferendis.</p>
+                    </div>
+                     
+                </div>
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+            <!-- If we need scrollbar -->
+        </div>
+        <br>
+        <style>
+            :root{
+                --saffron:rgb(254, 127, 48);
+                --saffron_light:#fca168;
+                --saffron_lightest:#fba168;
+                --primary:var(--saffron);
+                --light:#EEEEEE;
+                --dark:#212121;
+            }
+            .swiper {
+                width: 100%;
+                height: 100%;
+            }
+            .one{
+                background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+                url('../Images/Temple.webp');
+            }
+            .two{
+                background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+                url('../Images/Temple.webp');
+            }
+            .three{
+                background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+                url('../Images/Temple.webp');
+            }
+                
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                
+               
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                flex-direction: row;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: 0.125s all ease-in;
+            }
+            
+            .text{
+                background:rgba(255, 125, 50, 0.815);    
+                margin: 12px;
+            }
+
+            .swiper-slide img {
+                width: 60%;
+                height: 60%;
+                object-fit:contain;
+            }
+            .swiper-button-prev,.swiper-button-next{
+                color:var(--saffron);
+            }
+            .swiper-pagination-bullet{
+                background-color: var(--light);
+            }
+            .swiper-pagination-bullet-active-next,.swiper-pagination-bullet-active-next-next{
+                background-color: var(--primary);
+                opacity: 0.9;
+            }    
+            
+
+            @media only screen and (max-device-width: 480px) {
+                .swiper{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @media only screen and (max-device-width: 768px) {
+                .swiper{
+                    width: 100%;
+                    height: 100%;
+                }
+                .swiper-slide{
+                    flex-direction: column;
+                }
+            }
+        
+        </style>
+  
+  
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets:true,
+                    
+                },
+                
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                    });
+        </script>
+    </div>
+    </section>
+    <section class="event">
+        <div class="details">
+            <div class="textt">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sapiente? Quam iusto dolorem unde, sequi esse commodi quisquam facilis consequatur!</p>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
