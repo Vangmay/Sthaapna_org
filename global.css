@@ -53,7 +53,7 @@ nav{
     border-radius: 40px;
     width: 100%;
     max-width: 200px;
-    margin: 0px auto 60px;
+    margin: 0px auto 50px;
     text-align: center;
     padding: 12px 16px;
     background-color: #f28500;
@@ -80,7 +80,7 @@ nav{
     text-decoration:underline  wavy #3e3e3e 1px;
 }
 .mobile-nav-a:hover{
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     width: 50%;
     background-color: var(--saffron);
 }
