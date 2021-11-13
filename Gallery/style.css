@@ -13,6 +13,9 @@
    
 
 }
+body{
+    overflow-x: hidden;
+}
 img{
     width: 150px;
     border-radius: 40px;
@@ -142,22 +145,37 @@ h1{
     font-size: 2em;
 }
 
-.gallery{
-    min-height: 100vh;
-    width: 100%;
+.grid{
     height: fit-content;
-    background-color: var(--primary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: rgba(247, 222, 177, 0.3);
+    padding: 20px;
 }
-    
-    
-.gallery-container{
-    height: 100vh;
+
+.details,.gallery{
+    height: 100%;
     width: 100%;
 }
-.elfsight-app-46b599df-3365-42c9-9660-d57ed353b1df{
-    overflow-x: hidden;
-}    
-
+.details{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    color: #3e3e3e;
+}
+.about{
+    height: 100%;
+    width: 100%;
+}
+.details p{
+    height: 100%;
+}
 @media only screen and (min-width: 960px) {
     .text{
         font-size: 12px;
@@ -176,6 +194,9 @@ h1{
     }
     .text{
         font-size: 10px;
+    }
+    .grid{
+        flex-direction: column;
     }
 }
 @media only screen and (device-width: 768px) {
