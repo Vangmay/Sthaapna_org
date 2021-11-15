@@ -4,23 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./global.css">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+    <title>Sthaapna | About</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../global.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="container">
-                
-                <h1><img src="./Images/Sthaapna_samarkan_font-removebg-preview.png" alt="" srcset=""></h1>
-                
+               
+                <a href="/">
+                    <h1><img src="../Images/Sthaapna_samarkan_font-removebg-preview.png" alt="" srcset=""></h1>
+                </a>
                 <button class="hamburger">
                     <span></span>
                     <span></span>
@@ -30,211 +25,84 @@
         </nav>
     </header>
     <nav class="mobile-nav">
-        <a href="./About/" class="mobile-nav-a">About</a>
-        <a href="./Meet_the_team/" class="mobile-nav-a">Meet us</a>
-        <a href="./Gallery/" class="mobile-nav-a">Gallery</a>
-        <a href="./Contact/" class="is-active mobile-nav-a">Contact</a>
-        <a href="./Quiz/" class="is-active mobile-nav-a">Participate</a>
-        <a href="./Register" class="is-active mobile-nav-a">Join us</a>
+        <a href="../Meet_the_team" class="mobile-nav-a">Meet us</a>
+        <a href="../Gallery" class="mobile-nav-a">Gallery</a>
+        <a href="../Contact" class="is-active mobile-nav-a">Contact</a>
+        <a href="../Quiz/" class="mobile-nav-a">Participate</a>
+        <a href="../Register" class="is-active mobile-nav-a">Join us</a>
         <h6>Designed by: <span><a target="blank" href="https://thebinary-pages.com/" class="website">Vangmay Sachan</a></span></h6>
     </nav>
-    
+    <section class="photo"></section>
+    <section class="about">
+        <div class="about-photo">
+            <img src="../Images/logo.png"  alt="">
+        </div>
+        <br>
+        <div class="about-text">
+            <h1 class="font">About us</h1>
+            <p>
+                Sthaapna is trying to ignite young minds and give a platform to their innovative ideas and initiatives through community building and a model of entrepreneurship. To make the concept of self-reliance achievable, it is important to take the ideas of youth into consideration.
+                Sthaapna tries to help the youth find their purpose of life and guide them in their ventures so that they can lead a purposeful life and also contribute in nation-building.
+                Following the approach of nationalism and welfare, we are striving to create a society which has active participation of the youth. In order to achieve this, we need to channelize their energy in the right direction and give them the knowledge and guidance which can help them take the right decisions in life. Our two verticals stand strong on this vision and spread these fundamentals.
 
-
-    <section class="showcase">
-        
-        <video class = "video" src="./video.mp4" muted loop autoplay></video>
-            <div class="text">
-                <div class="animate">
-                    <h2 class="heading"><span class="text-ani font" id='text-ani'></span></h2>
-                </div>
-                <br>
-                <p class="textp">Join us and Contribute in Nation Building</p>
-            </div>
-    </section>  
-              
-              
-              
-              
-    <script src="./typed.js"></script>
-    <script>
-        var typed = new Typed('.text-ani', {
-            strings:[
-                'Intent and purity of purpose.',
-                'Innovative and imaginative ideas.',
-                "Untiring efforts for robust, flawless implementation."
-            ],
-            typeSpeed:50,
-            backSpeed:50,
-            showCursor:true,
-            autoInsertCss:true
-        });
-    </script>        
-    <script src="./typed.js"></script>
-    <section class="hero-container">
-        <div id = "parallax" class="div1 hero-div">
-            <h1 id="Div1" class="hero-h1">We are sthaapna</h1>
-        </div>
-        <div class="div3 hero-div">
-            <h1 class="hero-h1 font">Our work has inspired million others</h1>
-        </div>
-        <div class="div2 hero-div">
+            </p>
             <br>
-            <h1 class="hero-h1 font">Download our event reports <a class='link' href="./Downloads/">here</a></h1>
             <br>
-            
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./Images/BlogContest.webp" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="./Images/Gandhi-Shastri Quiz.webp" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="./Images/independence day quiz.webp" alt="" srcset=""></div>
-                    ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                
-                <!-- If we need scrollbar -->
-            </div>
             <br>
-            <style>
-                :root{
-                    --saffron:#FE7F30;
-                    --saffron_light:#fca168;
-                    --saffron_lightest:#fba168;
-                    --primary:var(--saffron);
-                    --light:#EEEEEE;
-                    --dark:#212121;
-                }
-                .swiper {
-                    width: 90%;
-                    height: 90%;
-                }
-                
-                .swiper-slide {
-                    text-align: center;
-                    font-size: 18px;
-                    background: #fff;
-                    
-                    background-color: var(--saffron_light);
-                    /* Center slide text vertically */
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    -webkit-align-items: center;
-                    align-items: center;
-                }
-    
-                .swiper-slide img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    object-fit:contain;
-                }
-                .swiper-button-prev,.swiper-button-next{
-                    color:var(--saffron);
-                }
-                .swiper-pagination-bullet{
-                    background-color: var(--light);
-                }
-                .swiper-pagination-bullet-active-next,.swiper-pagination-bullet-active-next-next{
-                    background-color: var(--primary);
-                    opacity: 0.9;
-                }    
-                @media only screen and (max-device-width: 480px) {
-                    .swiper{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-                @media only screen and (device-width: 768px) {
-                    .swiper{
-                        width: 100%;
-                        height: 100%;
-                    }
-                    
-                }
-            
-            
-            </style>
-      
-      
-            <script>
-                const swiper = new Swiper('.swiper', {
-                    // Optional parameters
-                    direction: 'horizontal',
-                    loop: true,
-                    
-                    // If we need pagination
-                    pagination: {
-                        el: '.swiper-pagination',
-                        dynamicBullets:true,
-                        
-                    },
-                    
-                    // Navigation arrows
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    
-                    // And if we need scrollbar
-                    scrollbar: {
-                        el: '.swiper-scrollbar',
-                    },
-                        });
-            </script>
-        </div>
-        <div class="div4 hero-div">
-            <h1 class="hero-h1 font" >Testimonials</h1>
-            <div class="testimonial">
-                <p>
-                    SHARMISHTHA SINGH RANAWAT:
-                    I am Sharmishtha Singh Ranawat, a third year student of St. Stephen's College, Delhi. I am deeply fond of Indian philosophy, 
-                    culture and civilizational history. My experience at Sthaapna’s Research conclave was enthralling. 
-                    The theme of the conclave was unique and very relevant in the current times. It is also an unexplored chapter of India's glorious 
-                    history which does not find a place in our syllabi. 
-                    While researching for the conclave, I learnt about some very interesting bits of India's trade and cultural exchanges as well as our 
-                    historical soft power. There is a lot we can learn from history and work on reviving our past glory to make our lives better. 
-                    The papers presented by all participants were deeply insightful and were a learning experience. I congratulate Sthaapna for their wonderful 
-                    initiative which will go a long way in Bharat's larger journey of Atmanirbharta.
-                </p>
-                <p>
-                    FARSHID DARUWALLA :
-                    Our country has a lot of potential which when tapped correctly can produce fabulous results. As history has it, India has been able to enthrall anyone who sets eyes on her. It is quite the privilege to be part of such a vibrant and a distinct country. Amidst modernization and technological advancements, we the youth of the country have forgotten our roots and our rich heritage. Keeping this in mind Sthaapna organized a research conclave where the focus was: Lost Indian Businesses. Surprisingly the conclave turned into a melting pot of various intricate art techniques and forms which indeed were quite intriguing. From gara embroidery, patola sarees and architecture to trade relations between India and China. Sthaapna played quite a role in making the youth understand what they have been missing out on all this while. 
-                    When it comes to me, I chose the Gara Embroidery which is highly intricate and delicate and has a beauty of its own. One interprets it differently every single time as each piece has a different story to tell. This research conclave not only made me dig deeper into our country's art forms but also made me connect with my own heritage. Going through different gara pieces of my own family to understanding how one is actually made, this research has definitely taught me more than I expected.
-                    Lastly, Sthaapna has presented a fabulous conclave where they successfully completed their goal of making today's youth realize how vibrant and beautiful our past is.
-                </p>
-                <p>
-                   <span class="bold"> Tanisha Acharya :</span>
-                    "A brave, frank, clean-hearted, courageous and aspiring youth is the only foundation on which the future nation can be built"  These words of Swami Vivekananda are being brought into action by Sthaapna. 
-                    Being a part of the Research Conclave organized by Sthaapna has been an experience which is one of a kind. For an aspiring young student like me this has been an enlightening session and has ignited in us the spirit to contribute actively in the resurgence of the rich cultural heritage of India. The deliberation over the need of reviving the lost Indian businesses has paved the way for us, to bring in innovative methods and renew the entrepreneurship skills for the betterment of the society. 
-                    As a budding blogger and an enthusiastic debater this has been a wonderful opportunity for me  to learn and express new ideas. It has dawned upon me a new way of thinking and analyzing issues of importance. It has been a privilege to be a part of this event. 
-                </p>
-                <!-- <iframe width="520" height="315" class="videos"
-                    src="https://www.youtube.com/embed/LXb3EKWsInQ">
-                </iframe>
-                <iframe width="520" height="315" class="videos"
-                    src="https://www.youtube.com/embed/LXb3EKWsInQ">
-                </iframe>
-                <iframe width="520" height="315" class="videos"
-                    src="https://www.youtube.com/embed/LXb3EKWsInQ">
-                </iframe> -->
-            </div>
         </div>
     </section>
-    <script src="./script.js"></script>
+
+    <section class="view">
+        <div class="Vision">
+            <br>
+            <h1 class="font">Our Vision</h1>
+            <p class="info">
+                Sthaapna is tirelessly working towards empowering the Indian youth, who, in the future, can help in the nation-building process. 
+                The organization is giving a platform to young minds to imagine, ignite, and invent.
+                Standing on the principles of nationalism and welfare, the organization has a vision of bringing the country together with logic, reasoning, and true nationalism. 
+                We aim to channelize the youth energy in the right direction and make them aware of the glorious Indian history which is unknown even today.
+            </p>
+
+            
+        </div>
+        <br>
+        <div class="Mission">
+            <br>
+            <span><h1 class="font">Our Mission</h1></span>
+            <p class="info">
+                For the longest time, India has been a market of cheap labor. We have provided the world with the best of minds and ideas at a penny price. The reason why the world’s largest democracy, whose maximum population is youth, is a mere market for labour is that we lack opportunities within the national boundaries. Sthaapna dreams of changing this scenario and making India the most prominent recruiter of great minds.
+
+            </p>
+            <br>
+        </div>
+    </section>
+    
+<section class="pillers">
+    <h1>The pillers of Sthaapna</h1>
+    
+        <div class="piller-1">
+            <div class="text-wrapper">
+                <h1 class="font"style="margin-right:10px;" >The Creators:</h1>
+                <p class="info">The Indian History has always been written with contempt which we have learnt to feel for our past, and with the lack of understanding we developed for our culture during the days of foreign domination. In order to make people aware about our glorious past and inculcate in them nationalistic sentiments for our nation, Sthaapna organizes quizzes on important aspects of Indian history which remain unhighlighted
+                    Through this vertical, we spread awareness about our glorious history, Indian culture and philosophy which is the essence of this soil. It is our rich heritage and a treasure which our ancestors have preserved for us. We need to realize its significance and value, and take pride in it. Thus, through a wide range of contests, Sthaapna is trying to engage the youth and make them aware about Indian warriors, eminent leaders, and unsung heroes, and enhance in them self-esteem about their own nation. 
+                </p>
+            </div>
+        </div>
+
+        <div class="piller-2">
+            <div class="text-wrapper">
+                <h1 class="font" style="margin-right:10px;">Sthaapna-Think for India</h1>
+                <p class="info">
+                                    Our nation, having more than 65% of the population below the age of 35, is a hub of youth power. If we channelize this energy with the right approach then India can reach the pinnacle and become a world leader. With this vision, Sthaapna is working on its vertical “Think For India”.
+                    ‘Sthaapna- Thifnk or India’ gives a platform to the unheard voices to share their imagination and turn it into reality. With innovative ideas coming from young minds, we can nurture them and build a community of entrepreneurs who will take this nation forward through development, growth and welfare.
+                    It’s a stage where people can use their innovation and knowledge to create ideas which will not only bring them profit but will also help build a better India. This platform aims to motivate, appreciate and guide budding entrepreneurs.
+                </p>
+            </div>
+        </div>
+    
+</section>
+<script src="./script.js"></script>
 </body>
-</html>
+</html>    
+
+
