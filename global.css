@@ -43,7 +43,7 @@
     background-color: #ececec;
 }
 ::selection{
-    background-color: var(--bg);
+    background-color: var(--greeen);
     color: var(--color);
 }
 nav{

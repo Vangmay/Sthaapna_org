@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sthaapna | Meet Us</title>
+    <link rel="icon" href="../Images/logo.png" type="image/icon type">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../global.css">
     <link
@@ -19,7 +20,10 @@
         <nav>
             <div class="container">
                 
-                <h1><img src="../Images/Sthaapna_samarkan_font-removebg-preview.png" alt="" srcset=""></h1>
+                <a href="../" class=""> 
+                    <h1><img src="../Images/Sthaapna_samarkan_font-removebg-preview.png" alt="" srcset=""></h1>
+                </a>
+
 
                 <button class="hamburger">
                     <span></span>
@@ -30,7 +34,6 @@
         </nav>
     </header>
     <nav class="mobile-nav">
-        <a href="../" class="mobile-nav-a">Home</a>
         <a href="../About/" class="mobile-nav-a">About</a>
         <a href="../Gallery" class="mobile-nav-a">Gallery</a>
         <a href="../Contact" class="is-active mobile-nav-a">Contact</a>
@@ -46,28 +49,68 @@
     <section class="founder">
         <br>
         <div class="founder-container">
+            <img src="../Images/Rohan_bhaiya.png" class="founder-img"alt="">
             <div class="founder-text">
+                
                 <br>
-                <img src="../Images/Rohan_bhaiya.png" class="founder-img"alt="">
                 <h1 class="font">About the founder</h1>
                 <p>Mr. Rohan Mahajan is an aspiring leader, an impeccable orator & motivational speaker with exemplary leadership qualities. He has completed his graduation in BA Program (Economics and Mathematics) from Delhi University, Post Graduation in Business Sustainability from TERI University. He has also pursued Post Graduate Diploma in Politics, Leadership and Governance from Indian Institute of Democratic Leadership (IIDL), Mumbai.
 
-                    Mr. Rohan is enterprising, self motivated & highly optimistic. With a kaleidoscopic vision and a practical approach, he perseveres to revolutionize the nation by channelizing young minds in the right direction. Mr. Rohan is proficient in public speaking, policy making, management & execution. His conviction & confidence is par excellence and he is a great source of inspiration for the youth.</p>
+                    Mr. Rohan is enterprising, self motivated & highly optimistic. With a kaleidoscopic vision and a practical approach, he perseveres to revolutionize the nation by channelizing young minds in the right direction. Mr. Rohan is proficient in public speaking, policy making, management & execution. His conviction & confidence is par excellence and he is a great source of inspiration for the youth.
+                </p>
             </div>
         </div>
         <br>
         <br>
-        
-        <section class="sliders">
+        <br>
+        <br>
+        <br>
+        <div class="text-cont">
+            <h1 class="font headingg" style="height: 100%; width: 100%; text-align: center; padding: 12px;">Meet our <span class="animate font"> advisory board</span></h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div  class="sliders">
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="../Images/1.webp" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="../Images/2.webp" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="../Images/3.webp" alt="" srcset=""></div>
-                    ...
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="../Images/1.webp" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="../Images/2.webp" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="../Images/3.webp" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="../Images/4.webp" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="../Images/5.webp" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="../Images/6.webp" alt="" srcset="">
+                        </div>
+                    </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -79,7 +122,7 @@
                 <!-- If we need scrollbar -->
             </div>
             <br>
-        </section>
+        </div>
     </section>
     
 
@@ -92,16 +135,22 @@
                 --light:#EEEEEE;
                 --dark:#212121;
             }
+            .sliders{
+                height: 100vh;
+                width: 100%;
+            }
             .swiper {
                 width: 80%;
-                height: 80vh;
+                height: 100%;
             }
             
             .swiper-slide {
                 text-align: center;
+                position: relative;
                 font-size: 18px;
                 background: #fff;
-
+                height: 100%;
+                width: 80%;
                 /* Center slide text vertically */
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -115,8 +164,13 @@
                 -ms-flex-align: center;
                 -webkit-align-items: center;
                 align-items: center;
-                }
-
+            }
+            .img-box{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            
             .swiper-slide img {
                 display: block;
                 width: 100%;

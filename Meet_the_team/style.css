@@ -145,6 +145,7 @@ h1{
     width: 100%;
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .about{
@@ -156,6 +157,7 @@ h1{
     width:250px;
     float: left;
     margin-right: 12px;
+    padding: 12px;
 }
 .founder-text{
     width: 100%;
@@ -164,6 +166,7 @@ h1{
     margin-right: 12px;
     text-align: center;
 }
+
 #logo{
     
     width: 450px;
@@ -174,6 +177,27 @@ h1{
     width: 100%;
     height: 100vh;
     
+}
+.text-cont{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    animation-duration: 2s;
+    transition:0.2s ease-in-out;
+    padding: 8px;
+    background: var(--dark);
+}
+.headingg{
+    transition:0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    color: var(--dark);
+    background: var(--dark);
+}
+.headingg:hover {
+    background: white;
+    transition:0.2s ease-in-out;
 }
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */

@@ -113,17 +113,26 @@ body{
 
 .hero{
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     height:100vh;
 }
 
 .link-container{
-    margin-left: 40px;    
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .link-container ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.link-container ul li{
+    margin: 12px;
 }
 .icons{
     display: flex;
@@ -170,8 +179,21 @@ body{
     height:2px;
 }
 .map-container{
+    height: 80%;
+    width: 100%;
     text-align:center;
     align-items: center;
+    padding: 12px;
+    margin: 40px;
+    background: linear-gradient(0deg, rgba(233,109,47,1) 10%, rgba(229,150,71,1) 41%, rgba(255,168,87,1) 84%, rgba(205,205,205,1) 100%);
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background: var(--saffron_light);
+    border-radius: 50%;
+    display:block;
+    position: relative;
 }
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
@@ -199,15 +221,26 @@ body{
     .icons{
         width: 220px;    
     }
+    .link-container ul{
+        flex-direction:column;
+    }
 }
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
         margin: 0px auto 40px;
     }
     
+    .link-container ul{
+        flex-direction:column;
+    }
     
-
 }
+@media only screen and (max-device-width: 901px) {
+    .link-container ul{
+        flex-direction: column;
+    }
+}
+
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     /* For portrait layouts only */

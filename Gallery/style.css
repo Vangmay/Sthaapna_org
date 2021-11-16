@@ -200,12 +200,20 @@ h1{
         flex-direction: column;
     }
 }
+@media only screen and (max-device-width: 893px) {
+    .grid{
+        flex-direction: column;
+    }
+}
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
         margin: 0px auto 40px;
     }
     .text{
         font-size: 10px;
+    }
+    .grid{
+        flex-direction: column;
     }
 }
 /* different techniques for iPad screening */
