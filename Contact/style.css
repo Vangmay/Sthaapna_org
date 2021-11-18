@@ -108,7 +108,7 @@ h1{
 
 
 body{
-    background-color: rgba(254, 127, 48,0.65);
+    background: #eeddddab;
 }
 
 .hero{
@@ -117,6 +117,7 @@ body{
     justify-content: center;
     width: 100%;
     height:80vh;
+    margin:0px;
 }
 
 .link-container{
@@ -162,31 +163,34 @@ body{
 .hero{
     display: flex;
     align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.slider{
+    width: 100%;
+    height: 80vh;
 }
 .icon-container{
-    background:radial-gradient( rgba(255,86,62,1) 0%, rgba(255,85,0,1) 15%, rgba(255,135,49,1) 65%, rgba(255,120,120,1) 100%);
+    background: rgb(22,181,150);
+    background: linear-gradient(to left, rgba(22,181,150,1) 0%, rgba(54,226,184,1) 38%, rgba(200,255,241,1) 100%);
     display: flex;
     flex-direction: column;
-    box-shadow: -9px 9px 12px 0px rgba(0,0,0,0.57);
-    -webkit-box-shadow: -9px 9px 12px 0px rgba(0,0,0,0.57);
-    -moz-box-shadow: -9px 9px 12px 0px rgba(0,0,0,0.57);
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 80%;
+    width: 100%;
 }
 .icons{
-    width: fit-content;
     height: fit-content;
+    width: 220px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left:20px;
     padding-right:20px;
     border-width: 2px;
-    border-style: dashed;
+    border-style: solid;
     border-radius: 12px;
-    margin: 12px;
-    width: 125px;
+    margin-top: 12px;
 }
 .icons a img{
     border-radius: 0px;
@@ -216,7 +220,8 @@ body{
 .form{
     height: 100%;
     width: 100%;
-    background: red;
+    background: rgb(255,169,115);
+    background: linear-gradient(to left, rgba(255,169,115,1) 0%, rgba(255,157,95,1) 32%, rgba(255,135,58,1) 50%, rgba(200,113,57,1) 100%);
     text-align: center;
     align-items: center;
     place-content: center;
@@ -230,6 +235,7 @@ body{
     border-radius: 12px;
     padding: 12px;
     resize: none;
+    border: 2px solid var(--dark);
 }
 .form-wrapper{
     height: fit-content;
@@ -264,20 +270,21 @@ body{
         margin: 0px auto 20px;
     }   
     .hero{
-        margin-top:20px;
         flex-direction: column;
         justify-content: space-between;
     }
     .map-container{
         width: 100%;
         height: 100%;
-        margin-top:12px;
     }    
     .icons{
         width: 220px;    
     }
     .link-container ul{
         flex-direction:column;
+    }
+    .hero{
+        flex-direction: column;
     }
 }
 @media only screen and (device-width: 768px) {
@@ -288,14 +295,29 @@ body{
     .link-container ul{
         flex-direction:column;
     }
+    .hero{
+        flex-direction: column;
+    }
     
 }
 @media only screen and (max-device-width: 901px) {
     .link-container ul{
         flex-direction: column;
     }
+    .hero{
+        flex-direction: column;
+    }
 }
 
+@media only screen and (max-device-width: 800px) {
+    .link-container ul{
+        flex-direction: column;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     /* For portrait layouts only */

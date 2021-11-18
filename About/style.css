@@ -17,7 +17,8 @@ img{
 }
 body{
     
-    background-color: rgba(254, 127, 48,0.86);
+    background: linear-gradient(90deg, rgba(255,129,50,1) 16%, rgba(145,153,97,1) 53%, rgba(22,181,150,1) 92%);;
+    
 }
 .container{
     max-width: 1280px;
@@ -179,6 +180,9 @@ h1{
     justify-content: center;
     align-items: center;
 }
+.Vision, .Mission{
+    padding: 12px;
+}
 .view div{
     
     height: 40%;
@@ -247,7 +251,10 @@ h1{
     background: white;
     padding: 12px;
 }
-
+.info{
+    padding: 12px;
+    text-align: left;
+}
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
 }
