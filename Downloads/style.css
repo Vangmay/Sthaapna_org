@@ -126,7 +126,9 @@ h1{
 /* ________________________________________________________________________ */
 
 body{
-    background: var(--primary);
+    background: url('../Images/Indian-buliding.webp');
+    background-position: center;
+    background-size: cover;
 }
 .main{
     min-height: 100vh;
@@ -136,7 +138,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--primary);
+    background: rgb(238,238,238);
+    background: linear-gradient(0deg, rgba(238,238,238,0.32) 0%, rgba(129,129,129,0.804359243697479) 29%, rgba(33,33,33,0.6643032212885154) 100%);
 }
 
 .item{
