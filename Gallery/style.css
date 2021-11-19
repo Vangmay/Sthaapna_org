@@ -153,6 +153,7 @@ h1{
     flex-direction: row;
     background: rgba(247, 222, 177, 0.3);
     padding: 20px;
+    border-bottom: 0.5px solid var(--dark);
 }
 
 .details,.gallery{
@@ -216,6 +217,12 @@ h1{
         flex-direction: column;
     }
 }
+@media screen and ( max-width: 858px ){ 
+    .grid{
+        flex-direction: column;
+    }
+}
+
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
   /* For portrait layouts only */
