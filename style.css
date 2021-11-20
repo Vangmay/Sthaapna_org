@@ -100,6 +100,7 @@ h1{
     background-color: var(--saffron_light);
     padding-top: 250px;
     transition: 0.4s;
+    background: radial-gradient(circle, rgba(238,238,238,0.32) 52%, rgba(255,102,0,0.6643032212885154) 100%);
 }
 .mobile-nav.is-active{
     left: 0;
