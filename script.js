@@ -60,4 +60,4 @@ setInterval(function(){
     testimony_container.innerHTML = testimony[counter]
     counter = counter + 1;
     console.log(names.length)
-},3000)
+},10000)
