@@ -54,7 +54,7 @@ nav{
 }
 .mobile-nav{
     background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0.3029586834733894) 52%, rgba(255,102,0,0.3) 83%);
+    background: radial-gradient(circle, rgba(0,0,0,0.3029586834733894) 84%, rgba(255,102,0,0.3) 100%);
 }
 .mobile-nav-a{
     display: block;

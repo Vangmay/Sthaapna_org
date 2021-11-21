@@ -307,23 +307,24 @@ h1{
 }
 .testimonial
 {
-    height: fit-content;
+    height: 100vh;
     min-height: 60%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: var(--saffron);
     
 }
 .name{
-    background: var(--greeen);
+    background:#16b59573;
     color: white;
     font-family: 'Samarkan', sans-serif;
-    
-    
 }
+.testimony{
+    background: #fe7f3080;
+}
+    
 .testimonial div{
     height: 100%;
     width: 100%;
@@ -339,6 +340,33 @@ h1{
     font-family: 'Red Hat Mono', monospace;
     text-align: center;
     margin: 25px;
+}
+.black{
+    color: black;
+}
+.impact{
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url('./Images/delhi.webp');
+    background-position: center;
+    background-size: cover;
+    
+}
+.impact-text{
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.418);
+}
+.Name,.Testimony{
+    transition: all 0.2s ease-in;
+}
+.impact-text ul{
+    list-style: none;
 }
 .div4{
     background: url('./Images/Beach.webp');
@@ -472,4 +500,10 @@ h1{
    .div2 p{
        width: 90%;
    }
+}
+@media screen and ( max-width: 858px ){ 
+    
+    .testimonial{
+        flex-direction: column;
+    }
 }
