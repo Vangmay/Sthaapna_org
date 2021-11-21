@@ -259,6 +259,7 @@ h1{
     justify-content: space-evenly;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     align-items: center;
     text-align: center;
 }
@@ -315,14 +316,19 @@ h1{
     justify-content: space-between;
     align-items: center;
     
+    
 }
 .name{
-    background:#16b59573;
-    color: white;
+    /* background:#16b59573; */
+    background-color: #ffffff88;
     font-family: 'Samarkan', sans-serif;
+    height: 100%;
+    width: 100%;
 }
 .testimony{
-    background: #fe7f3080;
+    background: #00000088;
+    height: 100%;
+    width: 100%;
 }
     
 .testimonial div{
@@ -364,6 +370,21 @@ h1{
 }
 .Name,.Testimony{
     transition: all 0.2s ease-in;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 12px;
+}
+.Testimony{
+    font-size: 15px;
+    max-width: 100%;
+    padding: 20px;
+    color: white;
 }
 .impact-text ul{
     list-style: none;
