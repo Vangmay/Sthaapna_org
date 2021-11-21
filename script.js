@@ -18,14 +18,11 @@ window.addEventListener('scroll',function(){
 
 var count = 3
 var names = [
-    'Sharmishtha Singh Ranawat',
     'Tanisha Acharya',
     'Moaz Bin Asad',
     'Raju Kumar',
 ]
 var testimony = [
-    `I am Sharmishtha Singh Ranawat, a third year student of St. Stephen's College, Delhi. I am deeply fond of Indian philosophy, culture and civilizational history. My experience at Sthaapna’s Research conclave was enthralling. The theme of the conclave was unique and very relevant in the current times. It is also an unexplored chapter of India's glorious history which does not find a place in our syllabi. While researching for the conclave, I learnt about some very interesting bits of India's trade and cultural exchanges as well as our historical soft power. There is a lot we can learn from history and work on reviving our past glory to make our lives better. The papers presented by all participants were deeply insightful and were a learning experience. I congratulate Sthaapna for their wonderful initiative which will go a long way in Bharat's larger journey of Atmanirbharta.`
-    ,
     
     `"A brave, frank, clean-hearted, courageous and aspiring youth is the only foundation on which the future nation can be built"  These words of Swami Vivekananda are being brought into action by Sthaapna. 
     Being a part of the Research Conclave organized by Sthaapna has been an experience which is one of a kind. For an aspiring young student like me this has been an enlightening session and has ignited in us the spirit to contribute actively in the resurgence of the rich cultural heritage of India. The deliberation over the need of reviving the lost Indian businesses has paved the way for us, to bring in innovative methods and renew the entrepreneurship skills for the betterment of the society. 
