@@ -43,7 +43,9 @@
 
     <section class="showcase">
         
-        <video class = "video" src="./video.mp4" muted autoplay></video>
+        <video class = "video" src="./video.mp4" muted autoplay>
+            
+        </video>
             <div class="text">
                 <div class="animate">
                     <h2 class="heading"><span class="text-ani font" id='text-ani'></span></h2>
@@ -94,8 +96,10 @@
 
                         </div>
                     </div>
-                    <div class="swiper-slide"><img src="./Images/Gandhi-Shastri Quiz.webp" alt="" srcset=""></div>
-                    <div class="swiper-slide"><img src="./Images/independence day quiz.webp" alt="" srcset=""></div>
+
+                    <div class="swiper-slide " id= 'slider1'></div>
+                    <div class="swiper-slide " id= 'slider2'></div>
+                    <div class="swiper-slide " id= 'slider3'></div>
                     
                 </div>
                 <!-- If we need pagination -->
@@ -107,7 +111,7 @@
                 
                 <!-- If we need scrollbar -->
             </div>
-            <br>
+            
         </div>
 
 
@@ -159,9 +163,36 @@
             --dark:#212121;
         }
         .swiper {
-            width: 90%;
-            height: 90%;
+            width: 100%;
+            height: 100%;
+            border: 1.2px  solid var(--dark);
+            
         }
+        #slider1{
+            height: 100%;
+            width: 100%;
+            background-size:contain;
+            background-position:center ;
+            background-repeat:no-repeat ;
+            background-image:url('./Images/Gandhi-Shastri Quiz.webp') ;
+        }
+        #slider2{
+            height: 100%;
+            width: 100%;
+            background-size:contain;
+            background-position:center ;
+            background-repeat:no-repeat ;
+            background-image:url('./Images/independence day quiz.webp') ;
+        }
+        #slider3{
+            height: 100%;
+            width: 100%;
+            background-size:cover;
+            background-position:center ;
+            background-repeat:no-repeat ;
+            background-image:url('./pexels-asad-photo-maldives-3293150.jpg') ;
+        }
+            
         
         .swiper-slide {
             text-align: center;
@@ -184,13 +215,16 @@
             align-items: center;
             height: 100%;
             width: 100%;
+            margin: 0;
         }
 
         .swiper-slide img {
             display: block;
             width: 100%;
             height: 100%;
-            object-fit:contain;
+            object-fit: cover;
+            position: relative;
+            align-items: center;
         }
         .swiper-slide p{
             

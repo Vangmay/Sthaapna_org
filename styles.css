@@ -131,6 +131,8 @@ h1{
     background:#111;
     color: #fff;
     z-index: 2;   
+    align-items: center;
+
 }
 
 .showcase header{
@@ -157,8 +159,9 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0.8;   
+    object-fit:contain;
+    object-position: center;
+    text-align: center;
 }
 
 .text{
@@ -170,6 +173,7 @@ h1{
     color: rgba(230, 230, 230, 0.7);
     border-radius: 12px;
     min-width: fit-content;
+    z-index: 1000;
 }    
 
 .overlay{
