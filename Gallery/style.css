@@ -177,7 +177,10 @@ h1{
 .details p{
     height: 100%;
 }
-
+.image{
+    height: 100%;
+    width: 100%;
+}
 @media only screen and (min-width: 960px) {
     .text{
         font-size: 12px;
