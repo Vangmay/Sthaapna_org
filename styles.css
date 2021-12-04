@@ -362,8 +362,8 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: url('./Images/delhi.webp');
-    background-position: center;
+    background: url('./Images/banaras.webp');
+    background-position: left;
     background-size: cover;
     
 }
