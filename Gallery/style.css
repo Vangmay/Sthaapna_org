@@ -170,18 +170,26 @@ h1{
     padding: 12px;
     color: #3e3e3e;
 }
+.details h1{
+    font-weight: 700;
+}
 .about{
     height: 100%;
     width: 100%;
 }
 .details p{
     height: 100%;
+    font-size: 15px;
 }
 .image{
     height: 100%;
     width: 100%;
     max-height: 480px;
     max-width: 480px;
+}
+.winner-list li{
+    list-style: "-";
+    font-weight: 900;
 }
 
 @media only screen and (min-width: 960px) {
@@ -206,6 +214,9 @@ h1{
     .grid{
         flex-direction: column;
     }
+    .winner-list li{
+        font-size: 13px;
+    }
 }
 @media only screen and (max-device-width: 893px) {
     .grid{
@@ -226,6 +237,12 @@ h1{
 @media screen and ( max-width: 858px ){ 
     .grid{
         flex-direction: column;
+    }
+    .details p{
+        font-size: 13px;
+    }
+    .winner-list li{
+        font-size: 13px;
     }
 }
 
