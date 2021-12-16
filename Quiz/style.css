@@ -157,7 +157,7 @@ html{
 @media only screen and (max-device-width: 480px) {
     .mobile-nav a{
         margin: 0px auto 20px;
-    }
+    } 
 }
 @media only screen and (device-width: 768px) {
     .mobile-nav a{
@@ -171,4 +171,25 @@ html{
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */
+}
+
+@media (max-width:560px){
+    .text{
+        
+        font-size: 12px;
+    };    
+    
+}
+@media (max-width:590px){
+    .text{
+    };    
+}
+
+@media (max-width:360px) {
+   .text{
+   }
+}
+@media screen and ( max-width: 858px ){ 
+    
+    
 }
