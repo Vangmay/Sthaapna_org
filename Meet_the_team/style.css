@@ -167,6 +167,12 @@ h1{
     text-align: center;
 }
 
+.founder-text p{
+    padding-left:30px ;
+    padding-right:30px ;
+    font-size: 15px;
+}
+
 #logo{
     
     width: 450px;
@@ -211,6 +217,9 @@ h1{
 @media only screen and (max-device-width: 480px) {
     .mobile-nav a{
         margin: 0px auto 20px;
+    }
+    .founder-text p{
+        font-size: 12px;
     }
 }
 @media only screen and (device-width: 768px) {
