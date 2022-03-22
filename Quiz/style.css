@@ -35,6 +35,10 @@ nav{
     padding:16px 32px;
     background-color: rgba(0, 0, 0, 0.3);
 }
+p{
+    text-align: justify;
+    padding: 20px;
+}
 h1{
    
     font-size: 28px;

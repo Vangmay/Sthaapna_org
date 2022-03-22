@@ -15,6 +15,9 @@ img{
     width: 150px;
     border-radius: 40px;
 }
+p{
+    text-align: justify;
+}
 body{
     
     background: linear-gradient(90deg, rgba(255,129,50,1) 16%, rgba(145,153,97,1) 53%, rgba(22,181,150,1) 92%);;
@@ -257,7 +260,7 @@ h1{
 }
 .info{
     padding: 12px;
-    text-align: left;
+    text-align: justify;
 }
 @media only screen and (min-width: 960px) {
     /* styles for browsers larger than 960px; */
