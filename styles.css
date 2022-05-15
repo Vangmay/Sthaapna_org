@@ -371,6 +371,10 @@ h1{
     padding: 30px;
     background: rgba(0, 0, 0, 0.418);
 }
+.impact-map-link{
+    color: white;
+    
+}
 .Name,.Testimony{
     transition: all 0.2s ease-in;
     height: 100%;
